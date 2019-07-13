@@ -1,0 +1,23 @@
+<div *ngIf="!heroes" style="height: 500px; margin: 0px; padding: 0px;">
+        <div style="width: 40%; height: 100%; background-color: khaki; float:left">
+        </div>
+        <div
+            style="width: 20%; height: 100%; background-color: lawngreen; float:left; text-align:center; vertical-align: middle;">
+            <p class="circle"></p>
+        </div>
+        <div style="width: 40%; height: 100%; background-color: lightcoral; float:left">
+        </div>
+    </div>
+    
+    <table class="grid grid-pad">
+        <tr>
+            <td>
+                <a *ngFor="let hero of heroes" class="col-1-4" routerLink="/detail/{{hero.id}}">
+                    <div class="module">
+                        <h4>{{hero.name}}</h4>
+                    </div>
+                </a>
+            </td>
+        </tr>
+    </table>
+    <app-hero-search></app-hero-search>
