@@ -1,0 +1,6 @@
+<h3>Countdown to Liftoff (via local variable)</h3>
+  <button class="button" (click)="start()">Start</button>
+  <button class="button" (click)="stop()">Stop</button>
+  <div class="seconds">{{timer.seconds}}</div>
+  <p>{{timer.message}}</p>
+<app-counterdown-child #timer></app-counterdown-child>

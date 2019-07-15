@@ -47,6 +47,10 @@ body, input[type="text"], button {
   float: right;
 }
 
+.buttonNew button{
+  float:none;
+}
+
 .button:hover {
   left: 1em;
   background-color: gray;

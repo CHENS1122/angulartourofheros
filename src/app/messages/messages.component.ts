@@ -8,9 +8,11 @@ import { MessageService } from '../message.service';
 export class MessagesComponent implements OnInit {
 
   messages: string[] = [];
+  msgSvc: MessageService;
 
-  constructor(private msgSvc: MessageService) 
-  { }
+  constructor(msgSvc: MessageService) { 
+    this.msgSvc = msgSvc;
+  }
 
   ngOnInit() {
     this.messages = this.msgSvc.messages;

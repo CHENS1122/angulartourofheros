@@ -1,0 +1,12 @@
+.seconds {
+    display: inline;
+    background-color: black;
+    margin:1em;
+    padding: 1em;
+    text-align: center;
+    vertical-align: middle;
+    color: red;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
